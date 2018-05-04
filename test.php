@@ -1,6 +1,7 @@
 <?php
 include('connection.php');
-$sql="INSERT INTO student(id, name, batch, address, email, dob)
+
+$sql="INSERT INTO student(id, name, batch, address)
 VALUES ('$_POST[id]','$_POST[name]','$_POST[batch]','$_POST[address]')";
 if (!mysql_query($sql,$conn))
   {
